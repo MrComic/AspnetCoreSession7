@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.1" NoWarn="NU1605" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="5.0.1" NoWarn="NU1605" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AspnetCoreSession7.Core.DomainModels\AspnetCoreSession7.Core.DomainModels.csproj" />
+    <ProjectReference Include="..\AspnetCoreSession7.Infra.ApplicationConfiguration\AspnetCoreSession7.Infra.ApplicationConfiguration.csproj" />
+    <ProjectReference Include="..\AspnetCoreSession7.Infra.DAL.SQLServer\AspnetCoreSession7.Infra.DAL.SQLServer.csproj" />
+  </ItemGroup>
+
+</Project>
